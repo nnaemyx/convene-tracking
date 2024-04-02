@@ -1,0 +1,39 @@
+.reset{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 0.9rem 1.9rem;
+    border-radius: 0.5rem;
+    max-width: 37.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: #d7cdcd;
+    border-radius: 0.5rem;
+}
+
+.reset h1, 
+.reset h3{
+    color: #332c1d;
+    font-size: 1.5rem;
+}
+.reset h1{
+    text-align: center;
+}
+.reset input{
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+}
+.reset input::placeholder{
+    opacity: 0.3;
+}
+.reset .link{
+    display: flex;
+    gap:1rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #008000;
+}

@@ -1,0 +1,43 @@
+.profileContainer{
+    background: #d7cdcd;
+    margin:  0 auto;
+    height: 100vh;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+
+
+.animatedHeading{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 50% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 4rem;
+}
+ul{
+    font-size: 2rem;
+    
+}
+li{
+    list-style-type: none;
+    
+}
+@keyframes textclip {
+    to {
+        background-position: 50% center;
+      }
+}

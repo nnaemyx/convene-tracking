@@ -1,0 +1,44 @@
+.feed{
+    background: #d7cdcd;
+    height: 100vh;
+    width: 100vw;
+}
+.feedPost{
+    width: 70vw;
+    height: 30vw;
+    background: blueviolet;
+}
+
+.votes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6rem;
+    background: #e3dfdf;
+    border-radius: 0.6rem;
+    padding: 0.5rem 1rem;    
+}
+
+.topicCount{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+.feedForm{
+    border-radius: 0.5rem;
+  padding: 0.625rem 0.935rem;
+}
+.feedForm input{
+    border-radius: 0.5rem;
+  padding: 0.625rem 0.935rem;
+  
+}
+.feedForm button{
+    margin-left: 3rem;
+    border-radius: 3rem;
+    padding: 0.625rem 0.935rem;
+}

@@ -1,0 +1,44 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+   
+}
+.menuIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+.navImg{
+    width: 17rem;
+    height: auto
+}
+.navBtn{
+    display: flex;
+    gap: 2rem;
+}
+.userName{
+  font-size: 2rem;
+  color: #332c1d;
+}
+  
+
+@media (max-width: 768px) {
+    .menuIcon,
+    .navBtn.show,
+    .navImg{
+    display: block;
+  }
+    .navBtn {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 10%;
+      left: 60%;
+      width: 100%; 
+    }
+
+  }
+  

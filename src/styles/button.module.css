@@ -1,0 +1,51 @@
+.btn{
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+.btn[data-fullwidth="true"] {
+    width: 100%;
+}
+
+.btn[data-variant ="primary"] {
+    border: 1px solid #1515dc;
+    color: #1515dc;
+}
+.btn[data-variant = "main"]{
+    background: #1515dc;
+    color: #ffffff;
+}
+.btn[data-variant ="primary"]:hover{
+    background: #1515dc;
+    color: #ffffff;
+}
+
+.btn[data-variant ="secondary"] {
+    background-color: #008000;
+    color: #ffffff;
+}
+.btn[data-variant = "default"]{
+    background: #808080;
+    color: #ffffff;
+
+}
+
+.btn[data-size="medium"] {
+    padding: 0.4rem 1rem;
+    padding: 0.6rem 1.4rem;
+}
+
+.btn[data-size="large"] {
+    padding: 0.625rem 1.5rem;
+}

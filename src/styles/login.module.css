@@ -1,0 +1,92 @@
+.loginContainer{
+  display: flex;
+  background: #d7cdcd;
+}
+.loginForm input{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.935rem;
+  margin-bottom: 1.5rem;
+}
+.form label{
+  line-height: 2;
+  text-align: left;
+  display: block;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #332c1d;
+}
+.loginForm{
+  width: 40vw;
+  padding: 10rem 2rem 0 5rem; 
+}
+.loginForm h1{
+  text-align: center;
+}
+.img{
+  display: block;
+  width: 60vw;
+  height: 100vh;  
+  object-fit: cover;
+}
+.account{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.forget,
+.signup{
+font-size: 1.2rem;
+text-decoration: none;
+display: flex;
+justify-content: center;
+}
+.forget{
+  margin-top: 1rem;
+}
+.forget Link{
+  text-decoration: none;
+}
+.signup{
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.935rem;
+  background: #ffffff;
+}
+
+@media screen and (max-width:900px){
+  
+  .imgWrapper{
+    display: none;
+  }
+  .loginForm{
+    padding: 0.9rem 1.9rem;
+    border-radius: 0.5rem;
+    max-width: 37.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: #d7cdcd;
+    border-radius: 0.5rem;
+  }
+  .signup,
+  .forget{
+    font-size: 1rem;
+  }
+  .form label{
+    font-size: 1.2rem;
+  }
+  
+}
+
+
+
+
+
+
