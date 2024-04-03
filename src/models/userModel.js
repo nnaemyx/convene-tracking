@@ -1,24 +1,26 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const userSchema = new mongoose.Schema({
-  username: String,
-  email: String,
-  password: String,
-  role: {
-    type: String,
-    required: [true],
-    default: "customer",
-    enum: ["customer", "admin"],
-  },
-  resetToken: {
-    type: String,
-  },
-  resetTokenExpires: {
-    type: String,
-  },
-  // Other user fields...
-});
+if (!mongoose.models.User) {
+  const userSchema = new Schema({
+    username: String,
+    email: String,
+    password: String,
+    role: {
+      type: String,
+      required: [true],
+      default: "customer",
+      enum: ["customer", "admin"],
+    },
+    resetToken: {
+      type: String,
+    },
+    resetTokenExpires: {
+      type: String,
+    },
+  });
 
-const User = mongoose.model('User', userSchema);
+  mongoose.model("User", userSchema);
+}
 
-module.exports = User;
+module.exports = mongoose.model("User");
